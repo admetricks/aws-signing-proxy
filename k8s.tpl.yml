@@ -17,12 +17,12 @@ data:
 kind: Service
 apiVersion: v1
 metadata:
-  name: ${APP_NAME}--pod
+  name: ${APP_NAME}--web
   labels:
     app: ${APP_NAME}
 spec:
   selector:
-    name: ${APP_NAME}--proxy-pod
+    name: ${APP_NAME}--proxy-web
   ports:
   - protocol: TCP
     port: 80
